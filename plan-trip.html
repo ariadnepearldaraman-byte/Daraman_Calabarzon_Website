@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip | CALABARZON Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="nav-wrap">
+        <a href="index.html" class="brand">
+            CALABARZON <span>Tourism</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="activities.html">Activities</a>
+            <a href="history.html">History &amp; Culture</a>
+            <a href="plan-trip.html" class="active" aria-current="page">Plan Your Trip</a>
+        </nav>
+    </div>
+</header>
+
+<main class="planner-page">
+    <section class="page-hero plan-hero">
+        <div class="plan-hero-content">
+            <p class="eyebrow">A getaway made for you</p>
+            <h1>Make room for a little <span>adventure.</span></h1>
+            <p>
+                Build a simple trip brief for your next CALABARZON escape:
+                pick a province, choose an experience, and set the date.
+            </p>
+            <a class="btn btn-light" href="#trip-planner">Start planning <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="plan-hero-note" aria-label="Travel inspiration">
+            <span>Region IV-A</span>
+            <strong>Five provinces.<br>One unforgettable trip.</strong>
+            <small>Nature · Culture · Coast</small>
+        </div>
+    </section>
+
+    <section class="section planner-section" id="trip-planner">
+        <div class="container">
+            <div class="section-heading planner-intro">
+                <span class="pill">Your trip, your pace</span>
+                <h2>Start with the details.</h2>
+                <p>
+                    Fill in what you know. This sample planner creates a
+                    confirmation on this page; it does not send or save your information.
+                </p>
+            </div>
+
+            <div class="trip-layout planner-layout">
+                <form id="tripForm" class="planner-form">
+                    <div class="planner-form-heading">
+                        <div>
+                            <span class="planner-step">TRIP BRIEF / 01</span>
+                            <h2>Travel information</h2>
+                        </div>
+                        <span class="planner-stamp" aria-hidden="true">GO<br>EXPLORE</span>
+                    </div>
+
+                    <div class="form-grid">
+
+                    <div class="field">
+                        <label for="fullname">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Enter your name"
+                            required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="field">
+                        <label for="destination">Choose Destination</label>
+                        <select id="destination" name="destination" required>
+                            <option value="">Select a destination</option>
+                            <option value="Cavite">Cavite</option>
+                            <option value="Laguna">Laguna</option>
+                            <option value="Batangas">Batangas</option>
+                            <option value="Rizal">Rizal</option>
+                            <option value="Quezon">Quezon</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="visitors">Number of Visitors</label>
+                        <input
+                            type="number"
+                            id="visitors"
+                            name="visitors"
+                            min="1"
+                            max="100"
+                            placeholder="Number of people"
+                            required>
+                    </div>
+
+                    <div class="field">
+                        <label for="travel-date">Travel Date</label>
+                        <input
+                            type="date"
+                            id="travel-date"
+                            name="travel-date"
+                            required>
+                    </div>
+
+                    <div class="field">
+                        <label for="activity">Preferred Activity</label>
+                        <select id="activity" name="activity" required>
+                            <option value="">Choose an activity</option>
+                            <option value="Nature">Nature and Eco-Tours</option>
+                            <option value="Beach">Swimming and Beach Trips</option>
+                            <option value="Hiking">Hiking and Mountain Climbing</option>
+                            <option value="Culture">Culture and History</option>
+                            <option value="Food">Food Trip</option>
+                        </select>
+                    </div>
+
+                    <div class="field full">
+                        <label for="message">Additional Requests</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Write your travel plans or requests..."></textarea>
+                    </div>
+
+                    <div class="field full planner-actions">
+                        <button type="submit" class="btn btn-secondary">
+                            Create My Travel Plan
+                        </button>
+                        <p class="planner-note">A flexible starting point, not a booking.</p>
+                    </div>
+
+                    </div>
+
+                    <p id="formMessage" class="form-message" aria-live="polite"></p>
+                </form>
+
+                <aside class="travel-tips planner-aside">
+                    <span class="planner-step">BEFORE YOU GO</span>
+                    <h2>A few good-to-knows</h2>
+
+                    <div class="tip">
+                        <span aria-hidden="true">01</span>
+                        <div>
+                            <h3>Pack for the place</h3>
+                            <p>Bring water, sun protection, and comfortable shoes for your activities.</p>
+                        </div>
+                    </div>
+
+                    <div class="tip">
+                        <span aria-hidden="true">02</span>
+                        <div>
+                            <h3>Check local updates</h3>
+                            <p>Weather, access, and safety conditions can change. Confirm before traveling.</p>
+                        </div>
+                    </div>
+
+                    <div class="tip">
+                        <span aria-hidden="true">03</span>
+                        <div>
+                            <h3>Travel with care</h3>
+                            <p>Follow local guidance, respect communities, and leave nature as you found it.</p>
+                        </div>
+                    </div>
+                    <div class="aside-signoff">Take only memories. Leave a lighter footprint.</div>
+                </aside>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="planner-route-section">
+        <div class="container planner-route">
+            <div>
+                <span class="pill light">A simple way to begin</span>
+                <h2>Pick a place.<br>Follow your curiosity.</h2>
+            </div>
+            <ol class="planner-route-steps">
+                <li><span>01</span> Choose a province</li>
+                <li><span>02</span> Find an experience</li>
+                <li><span>03</span> Check the details</li>
+            </ol>
+            <a class="btn btn-light" href="destinations.html">Browse destinations</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div>
+            <h3>CALABARZON Tourism</h3>
+            <p>Explore the beauty of Southern Luzon.</p>
+        </div>
+
+        <div>
+            <p>Region IV-A, Philippines</p>
+            <p>Discover • Explore • Enjoy</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const tripForm = document.getElementById("tripForm");
+    const formMessage = document.getElementById("formMessage");
+    const travelDate = document.getElementById("travel-date");
+
+    // Prevent selecting a date in the past.
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, "0");
+    const day = String(today.getDate()).padStart(2, "0");
+
+    travelDate.min = `${year}-${month}-${day}`;
+
+    tripForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("fullname").value;
+        const destination = document.getElementById("destination").value;
+        const date = travelDate.value;
+        const visitors = document.getElementById("visitors").value;
+        const activity = document.getElementById("activity").value;
+
+        formMessage.textContent =
+            `Thank you, ${name}! Your sample travel plan is ready: ` +
+            `${destination}, on ${date}, for ${visitors} visitor(s). ` +
+            `Preferred activity: ${activity}.`;
+
+        formMessage.classList.add("show");
+    });
+</script>
+
+</body>
+</html>
